@@ -462,6 +462,21 @@ small {
 	padding-block-start: 2rem;
 	line-height: 1.8;
 }
+.download-resume {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-clr);
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.download-resume:hover {
+    background-color: var(--primary-clr-dark);
+}
+
 
 /*******************
 		MY SKILLS SECTION
@@ -639,6 +654,7 @@ small {
 	font-size: clamp(1.15rem, 1vw, 1.3rem);
 }
 
+
 /*******************
 		EDUCATION SECTION
 *************************/
@@ -686,9 +702,31 @@ small {
   
 
 /*******************
-		CERTIFICATE SECTION
+	CERTIFICATE SECTION
 *************************/
 
+/* Center the whole certificates section */
+#certificates {
+    text-align: center;  /* Center text inside the section */
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: space-between;  /* Space between the two groups */
+    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
+    gap: 20px;  /* Space between certificates */
+    justify-content: center; /* Center certificates */
+}
+
+/* Styling for individual certificates */
+.certificates-item {
+    flex: 1 1 calc(50% - 10px); /* 50% width for each certificate with gap */
+    box-sizing: border-box;  /* Ensures padding and margin don't affect width */
+    text-align: center;  /* Center the content inside each item */
+    margin-bottom: 20px;  /* Space between certificate items */
+}
+
+/* Link styling */
 .view-certificate {
     color: green; /* Change link color to green */
     text-decoration: underline; /* Keep the underline */
@@ -697,6 +735,23 @@ small {
 .view-certificate:hover {
     color: darkgreen; /* Optional: change color on hover */
 }
+
+/* Center the subtitle and info text */
+#certificates .subtitle,
+#certificates .info {
+    text-align: center;  /* Center the subtitle and info */
+    display: block;  /* Ensure it is treated as a block element */
+    margin-left: auto;  /* Center alignment */
+    margin-right: auto; /* Center alignment */
+}
+
+/* Media query for smaller screens (less than 768px) */
+@media (max-width: 768px) {
+    .certificates-item {
+        flex: 1 1 100%; /* Make certificates full width on smaller screens */
+    }
+}
+
 
 
 /*******************
