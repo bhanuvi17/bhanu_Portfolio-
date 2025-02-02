@@ -439,7 +439,7 @@ small {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	place-items: center;
-	gap: 8rem;
+	gap: 10rem;
 	position: relative;
 }
 
@@ -984,4 +984,18 @@ small {
 	.mail-link {
 		justify-content: center;
 	}
+}
+
+/* Custom White Cursor with 4D-like Effect */
+.magic-cursor {
+    position: fixed;
+    width: 36px; /* Outer circle size */
+    height: 36px;
+    border-radius: 50%;
+    border: 3px solid #266225; /* White Border */
+    background: transparent; /* Hollow inside */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.1s ease-out; /* Smooth transformation */
 }
