@@ -435,7 +435,6 @@ small {
     padding: var(--section-mt) 1rem;
 }
 
-
 .about-me .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -464,19 +463,47 @@ small {
 	line-height: 1.8;
 }
 .download-resume {
+    text-transform: uppercase;
+    letter-spacing: 1px;
     display: inline-block;
-    padding: 12px 24px;
-    background-color: var(--primary-clr);
-    color: white;
-    font-size: 1rem;
+    border: 1px solid var(--accent-clr); /* Green border */
+    color: var(--accent-clr); /* Green text */
+    transition: all 300ms cubic-bezier(0.25, 0.32, 0.85, 0.58);
+    z-index: 1;
+    position: relative;
+    font-size: 0.90rem; /* Smaller text */
+    overflow: hidden;
+    padding: 9px 19px; /* Smaller button */
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.download-resume::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 2rem;
+    height: 1em;
+    border-radius: 50%;
+    background-color: var(--accent-clr); /* Green background on hover */
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
 }
 
 .download-resume:hover {
-    background-color: var(--primary-clr-dark);
+    cursor: pointer;
+    color: hsl(0, 0%, 9%); /* Dark text on hover */
+    border: none;
 }
+
+.download-resume:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
 
 
 /*******************
@@ -566,12 +593,21 @@ small {
 }
 
 .tech-stack li {
-	padding: 0.2rem 0.5rem;
-	background: var(--tag-clr);
-	border-radius: 2px;
-	color: var(--primary-clr);
-	font-size: clamp(1.15rem, 1vw, 1.3rem);
+    padding: 0.2rem 0.5rem;
+    background: var(--tag-clr);
+    border-radius: 2px;
+    color: var(--primary-clr);
+    font-size: clamp(1.15rem, 1vw, 1.3rem);
+    transition: all 0.3s ease-in-out;
 }
+
+.tech-stack li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly brighter background */
+    color: var(--accent-clr); /* Change text color to highlight */
+    transform: scale(1.1); /* Slightly enlarge the text */
+    font-weight: 600; /* Make it slightly bold */
+}
+
 
 .project-links a {
 	display: flex;
@@ -661,11 +697,11 @@ small {
 
 /* Link styling */
 .view-certificate {
-    color: rgb(17, 113, 215); /* Change link color to green */
+    color: rgb(62, 173, 99); /* Change link color to green */
 }
 
 .view-certificate:hover {
-    color: rgb(10, 177, 249); /* Optional: change color on hover */
+    color: rgb(87, 187, 100); /* Optional: change color on hover */
 }
 
 /* Center the subtitle and info text */
@@ -931,3 +967,5 @@ small {
     z-index: 9999;
     transition: transform 0.1s ease-out; /* Smooth transformation */
 }
+
+
