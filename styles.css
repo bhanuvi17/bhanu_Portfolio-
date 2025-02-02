@@ -728,12 +728,11 @@ small {
 
 /* Link styling */
 .view-certificate {
-    color: green; /* Change link color to green */
-    text-decoration: underline; /* Keep the underline */
+    color: rgb(17, 113, 215); /* Change link color to green */
 }
 
 .view-certificate:hover {
-    color: darkgreen; /* Optional: change color on hover */
+    color: rgb(0, 153, 255); /* Optional: change color on hover */
 }
 
 /* Center the subtitle and info text */
