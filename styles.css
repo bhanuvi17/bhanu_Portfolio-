@@ -430,10 +430,11 @@ small {
 		ABOUT SECTION
 *************************/
 .about-me {
-	margin-block-start: var(--section-mt);
-	background: var(--secondary-clr);
-	padding: var(--section-mt) 1rem;
+    margin-block-start: var(--section-mt);
+    background: transparent; /* Set to transparent if .hero has no specific background */
+    padding: var(--section-mt) 1rem;
 }
+
 
 .about-me .container {
 	display: grid;
