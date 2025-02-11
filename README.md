@@ -74,7 +74,7 @@ portfolio/
 ![Home Page](https://github.com/bhanuvi17/bhanu_Portfolio-/blob/d048990c248df2e8d14699a42f4b4747ff4b722e/Screenshot%202025-02-11%20230957.png)
 
 🔹 **Contact Page**  
-![Contact Page](https://github.com/bhanuvi17/bhanu_Portfolio-/blob/d048990c248df2e8d14699a42f4b4747ff4b722e/Screenshot%202025-02-11%20231056.png)
+![Contact Page](https://github.com/bhanuvi17/bhanu_Portfolio-/blob/f118b7590099e22ccac46d00f6c14ef2d30aba07/Screenshot%202025-02-11%20233706.png)
 
 ---
 
