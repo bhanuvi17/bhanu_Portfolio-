@@ -621,9 +621,6 @@ small {
 	color: var(--accent-clr);
 }
 
-
-
-
 /*******************
 		EDUCATION SECTION
 *************************/
@@ -666,61 +663,6 @@ small {
   .cgpa {
 	color: green;  /* If you want to color the CGPA in green */
   }
-  
-  
-  
-
-/*******************
-	CERTIFICATE SECTION
-*************************/
-
-/* Center the whole certificates section */
-#certificates {
-    text-align: center;  /* Center text inside the section */
-}
-
-.certificates-container {
-    display: flex;
-    justify-content: space-between;  /* Space between the two groups */
-    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
-    gap: 20px;  /* Space between certificates */
-    justify-content: center; /* Center certificates */
-}
-
-/* Styling for individual certificates */
-.certificates-item {
-    flex: 1 1 calc(50% - 10px); /* 50% width for each certificate with gap */
-    box-sizing: border-box;  /* Ensures padding and margin don't affect width */
-    text-align: center;  /* Center the content inside each item */
-    margin-bottom: 20px;  /* Space between certificate items */
-}
-
-/* Link styling */
-.view-certificate {
-    color: rgb(62, 173, 99); /* Change link color to green */
-}
-
-.view-certificate:hover {
-    color: rgb(87, 187, 100); /* Optional: change color on hover */
-}
-
-/* Center the subtitle and info text */
-#certificates .subtitle,
-#certificates .info {
-    text-align: center;  /* Center the subtitle and info */
-    display: block;  /* Ensure it is treated as a block element */
-    margin-left: auto;  /* Center alignment */
-    margin-right: auto; /* Center alignment */
-}
-
-/* Media query for smaller screens (less than 768px) */
-@media (max-width: 768px) {
-    .certificates-item {
-        flex: 1 1 100%; /* Make certificates full width on smaller screens */
-    }
-}
-
-
 
 /*******************
 		CONTACT SECTION
