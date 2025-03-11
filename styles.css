@@ -668,60 +668,128 @@ small {
 	EDUCATION SECTION
 *************************/
 
+/* Hover Effect */
+.education-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing and Typography */
+.education-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #040404;
+    border-radius: 8px;
+    background-color: #010101;
+}
+
+.degree-title {
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.institution-name {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.dates, .cgpa {
+    font-size: 1.5rem;
+    color: #1eba62;
+}
+
 
 /*******************
 	CERTIFICATE SECTION
 *************************/
 
+/*******************
+    CERTIFICATE SECTION
+*************************/
+
 /* Center the whole certificates section */
 #certificates {
-    text-align: center;  /* Center text inside the section */
+    text-align: center; /* Center text inside the section */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    padding: 60px 0; /* Add padding for spacing */
 }
 
+/* Container for certificates */
 .certificates-container {
     display: flex;
-    justify-content: space-between;  /* Space between the two groups */
-    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
-    gap: 20px;  /* Space between certificates */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between certificates */
     justify-content: center; /* Center certificates */
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Styling for individual certificates */
 .certificates-item {
-    flex: 1 1 calc(50% - 10px); /* 50% width for each certificate with gap */
-    box-sizing: border-box;  /* Ensures padding and margin don't affect width */
-    text-align: center;  /* Center the content inside each item */
-    margin-bottom: 20px;  /* Space between certificate items */
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark gray background for items */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificates-item:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+/* Certificate title styling */
+.certificates-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff; /* White text */
 }
 
 /* Link styling */
 .view-certificate {
-    color: rgb(62, 173, 99); /* Change link color to green */
+    color: rgb(62, 173, 99); /* Green link color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .view-certificate:hover {
-    color: rgb(87, 187, 100); /* Optional: change color on hover */
+    color: rgb(87, 187, 100); /* Lighter green on hover */
 }
 
 /* Center the subtitle and info text */
-#certificates .subtitle,
+#certificates .subtitle {
+    font-size: 1.1rem;
+    color: #0ee9a0; /* Blue subtitle */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#certificates .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff; /* White title */
+}
+
 #certificates .info {
-    text-align: center;  /* Center the subtitle and info */
-    display: block;  /* Ensure it is treated as a block element */
-    margin-left: auto;  /* Center alignment */
-    margin-right: auto; /* Center alignment */
+    font-size: 1rem;
+    color: #ccc; /* Light gray for info text */
+    margin-bottom: 40px;
 }
 
 /* Media query for smaller screens (less than 768px) */
 @media (max-width: 768px) {
     .certificates-item {
-        flex: 1 1 100%; /* Make certificates full width on smaller screens */
+        flex: 1 1 100%; /* Full width on smaller screens */
     }
 }
-
-
-
-
 
 /*******************
 		CONTACT SECTION

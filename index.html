@@ -429,219 +429,115 @@
 			
 
 			<!-- My Education -->
-			<style>
-				/* Enhanced Interactive Education Section */
-				.education-item {
-					position: relative;
-					transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-					cursor: pointer;
-					overflow: hidden;
-					border: 1px solid transparent;
-				}
-				
-				.education-item::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: -100%;
-					width: 100%;
-					height: 100%;
-					background: linear-gradient(
-						120deg, 
-						transparent, 
-						rgba(255,255,255,0.1), 
-						transparent
-					);
-					transition: all 0.6s ease;
-				}
-				
-				.education-item:hover::before {
-					left: 100%;
-				}
-				
-				.education-item:hover {
-					transform: scale(1.03) translateY(-5px);
-					box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-					border-color: rgba(255,255,255,0.2);
-				}
-				
-				.degree-info {
-					transition: transform 0.4s ease;
-				}
-				
-				.education-item:hover .degree-info {
-					transform: translateX(10px);
-				}
-				
-				.education-details {
-					transition: transform 0.4s ease;
-				}
-				
-				.education-item:hover .education-details {
-					transform: translateX(-10px);
-				}
-				
-				.degree-title {
-					transition: all 0.4s ease;
-				}
-				
-				.education-item:hover .degree-title {
-					color: #4a9fff;
-					letter-spacing: 0.5px;
-				}
-				
-				/* Interactive Tooltip Effect */
-				.education-item {
-					position: relative;
-				}
-				
-				.education-item::after {
-					content: 'View Details';
-					position: absolute;
-					top: -30px;
-					right: 10px;
-					background: rgba(74, 159, 255, 0.2);
-					color: #4a9fff;
-					padding: 5px 10px;
-					border-radius: 4px;
-					font-size: 0.7rem;
-					opacity: 0;
-					transition: all 0.3s ease;
-					pointer-events: none;
-				}
-				
-				.education-item:hover::after {
-					opacity: 1;
-					top: -40px;
-				}
-				
-				/* Subtle Interaction Ripple */
-				.education-item::before {
-					content: '';
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%) scale(0);
-					width: 0;
-					height: 0;
-					border-radius: 50%;
-					background: rgba(74, 159, 255, 0.1);
-					z-index: -1;
-					transition: all 0.4s ease;
-				}
-				
-				.education-item:active::before {
-					width: 200%;
-					height: 200%;
-					transform: translate(-50%, -50%) scale(1);
-				}
-				</style>
-				
-				<!-- Rest of HTML remains the same as original -->
-				<section class="my-education" id="education" data-aos="fade-up">
-					<div class="container">
-						<article>
-							<p class="subtitle">My Education</p>
-							<h2 class="title">Educational Qualifications</h2>
-							<p class="info">
+			
+			<section class="my-education" id="education" data-aos="fade-up">
+				<div class="container">
+					<article>
+						<p class="subtitle">My Education</p>
+						<h2 class="title">Educational Qualifications</h2>
+						<p class="info">
 							Below are the details of my academic background:
-							</p>
-						</article>
-					
-						<!-- College Education -->
-						<div class="education-item">
-							<div class="degree-info">
-								<h3 class="degree-title">BE in Computer Science Engineering</h3>
-								<p class="institution-name">Sambhram Institute of Technology, Bengaluru</p>
-							</div>
-							<div class="education-details">
-								<p class="dates">2021 - Present</p>
-								<p class="cgpa">CGPA: 8.1</p>
-							</div>
+						</p>
+					</article>
+			
+					<!-- College Education -->
+					<div class="education-item">
+						<div class="degree-info">
+							<i class="fas fa-graduation-cap education-icon"></i> <!-- Icon for college -->
+							<h3 class="degree-title">BE in Computer Science Engineering</h3>
+							<p class="institution-name">Sambhram Institute of Technology, Bengaluru</p>
 						</div>
-					
-						<!-- Intermediate Education -->
-						<div class="education-item">
-							<div class="degree-info">
-								<h3 class="degree-title">Intermediate</h3>
-								<p class="institution-name">Sri Muninarayana Junior College, Baireddipalli</p>
-							</div>
-							<div class="education-details">
-								<p class="dates">2019 - 2021</p>
-								<p class="cgpa">CGPA: 9.1</p>
-							</div>
-						</div>
-					
-						<!-- School Education -->
-						<div class="education-item">
-							<div class="degree-info">
-								<h3 class="degree-title">10th Grade</h3>
-								<p class="institution-name">Z P H S, Theertham</p>
-							</div>
-							<div class="education-details">
-								<p class="dates">2018 - 2019</p>
-								<p class="cgpa">CGPA: 9.3</p>
+						<div class="education-details">
+							<p class="dates">2021 - Present</p>
+							<p class="cgpa"><strong>CGPA:</strong> 8.1</p>
+							<div class="progress-bar">
+								<div class="progress" style="width: 70%;"></div> <!-- Example progress bar -->
 							</div>
 						</div>
 					</div>
-				</section>
-
-
-			 <!-- My Certificates -->
-			<section id="certificates" class="py-16" data-aos="fade-up">
-				<div class="container">
-					<article>
-						<p class="subtitle">My Certificates</p>
-						<h2 class="title">Certificates</h2>
-						<p class="info">
-							Below are the details of my certificates:
-						</p>
-					</article>
-
-					<!-- Container to hold certificates side by side -->
-					<div class="certificates-container">
-						<!-- Certificate 1 -->
-						<div class="certificates-item">
-							<h3 class="certificates-title">Deloitte Data Analytics Job Simulation</h3>
-							<a href="https://drive.google.com/file/d/1IgQ046zK2CIrHZ-n3zPwBAPk7GxA4EA_/view?usp=drive_link" 
-								class="view-certificate" target="_blank">View Certificate</a>
+			
+					<!-- Intermediate Education -->
+					<div class="education-item">
+						<div class="degree-info">
+							<i class="fas fa-book education-icon"></i> <!-- Icon for intermediate -->
+							<h3 class="degree-title">Intermediate</h3>
+							<p class="institution-name">Sri Muninarayana Junior College, Baireddipalli</p>
 						</div>
-						<!-- Certificate 1 -->
-						<div class="certificates-item">
-							<h3 class="certificates-title">Python From Internshala</h3>
-							<a href="https://drive.google.com/file/d/1E_JegPAj-aPOSwrvUwbcgF6Q8_IyqNwv/view?usp=drive_link" 
-								class="view-certificate" target="_blank">View Certificate</a>
+						<div class="education-details">
+							<p class="dates">2019 - 2021</p>
+							<p class="cgpa"><strong>CGPA:</strong> 9.1</p>
 						</div>
-
-						<!-- Certificate 2 -->
-						<div class="certificates-item">
-							<h3 class="certificates-title">AI For Everyone From Coursera</h3>
-							<a href="https://drive.google.com/file/d/1EynNlK7T1O3WcSST213PekEKOTKqwKSu/view?usp=drive_link" 
-								class="view-certificate" target="_blank">View Certificate</a>
+					</div>
+			
+					<!-- School Education -->
+					<div class="education-item">
+						<div class="degree-info">
+							<i class="fas fa-school education-icon"></i> <!-- Icon for school -->
+							<h3 class="degree-title">10th Grade</h3>
+							<p class="institution-name">Z P H S, Theertham</p>
 						</div>
-
-						<!-- Certificate 3 -->
-						<div class="certificates-item">
-							<h3 class="certificates-title">Data Analysis With Python From Udemy</h3>
-							<a href="https://drive.google.com/file/d/1rj1l8x1VqDF2riEg1ROsdXBWKULXOkGb/view?usp=drive_link" 
-								class="view-certificate" target="_blank">View Certificate</a>
-						</div>
-
-						<!-- Certificate 4 -->
-						<div class="certificates-item">
-							<h3 class="certificates-title">Machine Learning Bootcamp From Udemy</h3>
-							<a href="https://drive.google.com/file/d/10OlTNK2gmSimih2385IKj4dqCQEl80fw/view?usp=drive_link" 
-								class="view-certificate" target="_blank">View Certificate</a>
-						</div>
-						<!-- Certificate 5 -->
-						<div class="certificates-item">
-							<h3 class="certificates-title">Machine Learning & Python From Karunadu technologies</h3>
-							<a href="https://drive.google.com/file/d/17zFjfrvEJSsBJ_wBQzmuUbshfcthFBNn/view?usp=drive_link" 
-								class="view-certificate" target="_blank">View Certificate</a>
+						<div class="education-details">
+							<p class="dates">2018 - 2019</p>
+							<p class="cgpa"><strong>CGPA:</strong> 9.3</p>
 						</div>
 					</div>
 				</div>
-			</section>		  
+			</section>
+
+
+			 <!-- My Certificates -->
+			<!-- My Certificates -->
+<section id="certificates" class="py-16" data-aos="fade-up">
+    <div class="container">
+        <article>
+            <p class="subtitle">My Certificates</p>
+            <h2 class="title">Certificates</h2>
+        </article>
+
+        <!-- Container to hold certificates side by side -->
+        <div class="certificates-container">
+            <!-- Certificate 1 -->
+            <div class="certificates-item">
+                <h3 class="certificates-title">Deloitte Data Analytics Job Simulation</h3>
+                <a href="https://drive.google.com/file/d/1IgQ046zK2CIrHZ-n3zPwBAPk7GxA4EA_/view?usp=drive_link" 
+                    class="view-certificate" target="_blank">View Certificate</a>
+            </div>
+            <!-- Certificate 2 -->
+            <div class="certificates-item">
+                <h3 class="certificates-title">Python From Internshala</h3>
+                <a href="https://drive.google.com/file/d/1E_JegPAj-aPOSwrvUwbcgF6Q8_IyqNwv/view?usp=drive_link" 
+                    class="view-certificate" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="certificates-item">
+                <h3 class="certificates-title">AI For Everyone From Coursera</h3>
+                <a href="https://drive.google.com/file/d/1EynNlK7T1O3WcSST213PekEKOTKqwKSu/view?usp=drive_link" 
+                    class="view-certificate" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="certificates-item">
+                <h3 class="certificates-title">Data Analysis With Python From Udemy</h3>
+                <a href="https://drive.google.com/file/d/1rj1l8x1VqDF2riEg1ROsdXBWKULXOkGb/view?usp=drive_link" 
+                    class="view-certificate" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="certificates-item">
+                <h3 class="certificates-title">Machine Learning Bootcamp From Udemy</h3>
+                <a href="https://drive.google.com/file/d/10OlTNK2gmSimih2385IKj4dqCQEl80fw/view?usp=drive_link" 
+                    class="view-certificate" target="_blank">View Certificate</a>
+            </div>
+            <!-- Certificate 6 -->
+            <div class="certificates-item">
+                <h3 class="certificates-title">Machine Learning & Python From Karunadu Technologies</h3>
+                <a href="https://drive.google.com/file/d/17zFjfrvEJSsBJ_wBQzmuUbshfcthFBNn/view?usp=drive_link" 
+                    class="view-certificate" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</section>		  
 
 			<!-- contact section -->
 			<section class="contact" data-aos="fade-up">
