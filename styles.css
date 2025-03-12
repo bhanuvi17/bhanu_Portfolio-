@@ -700,11 +700,6 @@ small {
     color: #1eba62;
 }
 
-
-/*******************
-	CERTIFICATE SECTION
-*************************/
-
 /*******************
     CERTIFICATE SECTION
 *************************/
@@ -745,7 +740,7 @@ small {
 
 /* Certificate title styling */
 .certificates-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
     color: #fff; /* White text */
@@ -772,14 +767,14 @@ small {
 }
 
 #certificates .title {
-    font-size: 2rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #fff; /* White title */
 }
 
 #certificates .info {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #ccc; /* Light gray for info text */
     margin-bottom: 40px;
 }
