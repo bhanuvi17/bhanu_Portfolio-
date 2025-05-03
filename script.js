@@ -45,5 +45,3 @@ document.addEventListener("mousemove", function (e) {
     // Apply transform: move (translate) and scale the cursor for 4D effect
     cursor.style.transform = `translate(-50%, -50%) translate(${distanceX}px, ${distanceY}px) scale(${scale})`;
 });
-
-
