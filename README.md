@@ -100,10 +100,10 @@ git push origin main
 
 ---
 
-## 📜 License
+## License
 This project is open-source under the **MIT License**.
 
-💡 **Need Help?**
-Feel free to reach out or open an **issue**! 😊  
+ **Need Help?**
+Feel free to reach out or open an **issue**!  
 
-⭐ **If you like this project, give it a star on GitHub!** ⭐
+ **If you like this project, give it a star on GitHub!**
